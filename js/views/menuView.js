@@ -1,13 +1,23 @@
 var menuView = Backbone.View.extend({
     initialize: function () {
         this.listenTo(this, 'afterRender', this.afterRender);
+
     },
     events: {
-    	'click .nav-tabs-li': 'selectItem',
+    	'click .nav-tabs a': 'selectItem',
     },
     className: 'menu-view',
-    selectItem: function (event) {
-        console.log('wsdsdf');
+    selectItem: function (e) {
+        stop(e);
+        var self = this;
+        var target = $(e.target);
+        self.$el.find('.nav-tabs a').click(function (e) {
+            var scrollmem = $('body').scrollTop();
+            Backbone.history.navigate('#/' + target.attr('href'), {trigger: true});
+
+
+            $('html,body').scrollTop(scrollmem);
+        });
     },
     render:function (eventName) {
     	self = this;

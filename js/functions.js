@@ -23,61 +23,11 @@ function closeView(view){
     }
 }
 
-function addDisabled(elem) {
-    elem.attr('disabled', 'disabled');
-    elem.attr('style', 'background-color:grey');
-}
-
-function removeDisabled(elem) {
-    elem.removeAttr('disabled', 'disabled');
-    elem.removeAttr('style', 'background-color:grey');
-}
 
 //stop propagation and prevent default of events
 function stop(event) {
     event.stopPropagation();
     event.preventDefault();
-}
-
-//error reporting of model save
-function alertError(response){
-    var msg = "Error: \n";
-
-    if (response !== undefined){
-        if (response == '1062') {
-            msg = msg + ' Ya esta registrado' ;
-        }
-
-        if (response == '1452') {
-            msg = msg + ' Foreign Key Constraint' ;
-        }
-
-        if (response.responseText !== undefined) {
-            msg = msg + "Response text: " +response.responseText;
-        }
-    }
-
-    alert(msg);
-}
-
-function fetchAndDisplayProduct(model, el, val){
-    val = val || false;
-    model.fetch({
-	success: function (m) {
-	    if(!_.isNull(m.get('name'))){//if exist because name is not null always
-		if (val === false) {
-		    el.find("#productoName").html(m.escape("name"));
-		    el.find("#productoSize").html(m.escape("size"));
-		} else{
-		    el.find("#productoName").val(m.escape("name"));
-		    el.find("#productoSize").val(m.escape("size"));
-		}
-	    } else {
-		el.find("#productoName").html("No existe este producto");
-		el.find("#productoSize").html("");
-	    }
-	}
-    });
 }
 
 

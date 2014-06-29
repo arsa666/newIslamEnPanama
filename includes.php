@@ -48,6 +48,8 @@ echo '
     <script src="js/router.js"></script>
     <!-- JavaScript -->
 
-      <title>Accurate</title>
+      <title>Islam En Panama</title>
+      <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
     </head>';    
 ?>
