@@ -1,0 +1,102 @@
+
+.header1{
+    background-image: url('images/back9.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.fc-white{
+    color:white;
+}
+
+.fc-333{
+    color:#333333;
+}
+
+.shadow{
+    box-shadow: 0 0 30px black;
+
+}
+
+.min-h-270{
+    min-height: 250px;
+
+}
+
+.text-shadow-black{
+    text-shadow:4px 4px #000000;
+}
+
+.text-shadow-white{
+    text-shadow:4px 4px #FFFFFF;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.p-15{
+    padding: 15px;
+}
+
+.p-20{
+    padding: 20px;
+}
+
+.pt-10{
+    padding-top: 10px;
+}
+
+.pt-15{
+    padding-top: 15px;
+}
+
+.pt-20{
+    padding-top: 20px;
+}
+
+.m-1{
+    margin: 10px;
+}
+
+.m-1{
+    margin: 15px;
+}
+
+.m-20{
+    margin: 20px;
+}
+
+.u{
+    text-decoration:underline;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-25{
+    font-size: 20px;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+.fs-40{
+    font-size: 40px;
+}
+
+.fs-50{
+    font-size: 50px;
+}
+
+.fs-60{
+    font-size: 60px;
+}
+
+
+
+.bg-black{
+    background-color: #000000;
+}
