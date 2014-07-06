@@ -2,11 +2,13 @@
 <body>
 
 
-    <div id="main">
         <div id='menu'></div>
+        <div id='content'></div>
+        <hr>
 
-    </div>
-
+  <footer>
+    <p>&copy; Islam en Panama</p>
+  </footer>
 
 
 </body>

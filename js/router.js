@@ -3,18 +3,39 @@ window.App = {};
 var MessageRouter = Backbone.Router.extend({
     initialize:function(){
         //App.views = new Array();
-        this.indexDisplay();
+        this.menu();
         C('init function');
     },
     routes:{
-        ""      : "indexDisplay",
-        "test" : "test",
+        ""      : "mainContent",
+        "main" : "mainContent",
+        "pilares" : 'pilares',
+        "mujer" : 'mujer',
+
     },
     //MENU inicio init () index
-     indexDisplay: function () {
+     menu: function () {
         App.menuView = new menuView({});
-        $('#main').html(App.menuView.render().el);
+        App.menuView.render();
         C('index');
+
+    },
+    mainContent: function () {
+        var view = new mainContent({});
+        view.render();
+        C('main content');
+
+    },
+    pilares: function () {
+        var view = new pilares({});
+        view.render();
+        C('pilares');
+
+    },
+    mujer: function () {
+        var view = new mujer({});
+        view.render();
+        C('mujer');
 
     },
     test: function () {
