@@ -109,6 +109,9 @@
     background-color: #000000;
 }
 
+.bg-333{
+    background-color: #333333;
+}
 
 .w-50{
     width:50px;
@@ -124,3 +127,29 @@
 }
 
 
+#pilaresTable td{
+    padding:30px;
+    font-size: 25px;
+}
+
+.footer-container{
+    min-height: 20px;
+    color:#FFF;
+}
+
+.b-b{
+    border-bottom:1px solid black;
+}
+
+.dropdown-menu a{
+    font-size:20px;
+
+}
+
+.imgBody{
+    float:left;
+    width:200px;
+    height:200px;
+    margin-right:10px;
+    margin-top:5px;
+}

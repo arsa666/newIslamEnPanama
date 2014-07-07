@@ -11,7 +11,17 @@ var MessageRouter = Backbone.Router.extend({
         "main" : "mainContent",
         "pilares" : 'pilares',
         "mujer" : 'mujer',
-
+        "noTriste" : 'noTriste',
+        "verdad": "verdad",
+        "verdad": "verdad",
+        "ciencia": "ciencia",
+        "ramadan": "ramadan",
+        "bano": "bano",
+        "quran": "quran",
+        "salah": "salah",
+        "qiblah": "qiblah",
+        "duas": "duas",
+        "hadith": "hadith",
     },
     //MENU inicio init () index
      menu: function () {
@@ -38,9 +48,57 @@ var MessageRouter = Backbone.Router.extend({
         C('mujer');
 
     },
-    test: function () {
-        C('test');
-    }
+    noTriste: function () {
+        var view = new noTriste({});
+        view.render();
+        C('noTriste');
+
+    },
+    verdad: function () {
+        var view = new verdad();
+        view.render();
+        C('verdad');
+    },
+    ciencia: function () {
+        var view = new ciencia();
+        view.render();
+        C('ciencia');
+    },
+    ramadan: function () {
+        var view = new ramadan();
+        view.render();
+        C('ramadan');
+    },
+    bano: function () {
+        var view = new bano();
+        view.render();
+        C('bano');
+    },
+    quran: function () {
+        var view = new quran();
+        view.render();
+        C('quran');
+    },
+    salah: function () {
+        var view = new salah();
+        view.render();
+        C('salah');
+    },
+    qiblah: function () {
+        var view = new qiblah();
+        view.render();
+        C('qiblah');
+    },
+    duas: function () {
+        var view = new duas();
+        view.render();
+        C('duas');
+    },
+    hadith: function () {
+        var view = new hadith();
+        view.render();
+        C('hadith');
+    },
 
 });
 

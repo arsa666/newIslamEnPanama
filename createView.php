@@ -19,6 +19,7 @@ fwrite($file,"var $argv1 = Backbone.View.extend({
     	 $.get('$templateName', function (data) {
             template = _.template($(data).html(), {});
             self.\$el.html(template);
+            $('#content').html(template);
         }, 'html');
 
         return this;
@@ -30,7 +31,7 @@ $fileTemplate=fopen("$templateName","w") or exit("Unable to create template file
 
 fwrite($fileTemplate, "<script type='text/template'>
 
-<div class='.template'>Template for $templateName and view $fileName. Click me!</div>
+<div class='container'>Template for $templateName and view $fileName. Click me!</div>
 
 </script>");
 fclose($fileTemplate);

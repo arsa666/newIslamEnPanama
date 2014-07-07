@@ -50,7 +50,7 @@ echo '
     <!-- JavaScript -->
 
       <title>Islam En Panama</title>
-      <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+      <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     </head>';    
 ?>
