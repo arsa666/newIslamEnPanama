@@ -31,6 +31,8 @@
     text-shadow:4px 4px #FFFFFF;
 }
 
+////////Padding and Margin/////////////
+
 .p-10{
     padding: 10px;
 }
@@ -55,6 +57,27 @@
     padding-top: 20px;
 }
 
+.pt-100{
+    padding-top: 100px;
+}
+
+.pb-10{
+    padding-bottom: 10px;
+}
+
+.pb-15{
+    padding-bottom: 15px;
+}
+
+.pb-20{
+    padding-bottom: 20px;
+}
+
+.pb-100{
+    padding-bottom: 100px;
+}
+
+
 .m-1{
     margin: 10px;
 }
@@ -66,6 +89,10 @@
 .m-20{
     margin: 20px;
 }
+
+
+
+
 
 .u{
     text-decoration:underline;
@@ -153,3 +180,18 @@
     margin-right:10px;
     margin-top:5px;
 }
+
+.imgBody2{
+    width:200px;
+    height:200px;
+    border:solid black 1px;
+}
+
+.duaFotos{
+    width:550px;
+    height: 100px;
+}
+
+
+
+
