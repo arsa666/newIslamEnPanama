@@ -31,7 +31,7 @@ $fileTemplate=fopen("$templateName","w") or exit("Unable to create template file
 
 fwrite($fileTemplate, "<script type='text/template'>
 
-<div class='container'>Template for $templateName and view $fileName. Click me!</div>
+<div class='container min-h-270'>Template for $templateName and view $fileName. Click me!</div>
 
 </script>");
 fclose($fileTemplate);

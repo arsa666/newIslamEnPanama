@@ -22,6 +22,9 @@ var MessageRouter = Backbone.Router.extend({
         "qiblah": "qiblah",
         "duas": "duas",
         "hadith": "hadith",
+        "islamRadio": "islamRadio",
+        "videos": "videos",
+        "audios":"audios",
     },
     //MENU inicio init () index
      menu: function () {
@@ -98,6 +101,21 @@ var MessageRouter = Backbone.Router.extend({
         var view = new hadith();
         view.render();
         C('hadith');
+    },
+    islamRadio: function () {
+        var view = new islamRadio();
+        view.render();
+        C('islamRadio');
+    },
+    videos: function () {
+        var view = new videos();
+        view.render();
+        C('videos');
+    },
+    audios: function () {
+        var view = new audios();
+        view.render();
+        C('audios');
     },
 
 });
