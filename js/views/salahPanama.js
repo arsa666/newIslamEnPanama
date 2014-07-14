@@ -1,7 +1,6 @@
-var mainContent = Backbone.View.extend({
+var salahPanama = Backbone.View.extend({
     initialize: function () {
         this.listenTo(this, 'afterRender', this.afterRender);
-
     },
 	events:{
 	'click .template': 'templateFunc'
@@ -10,20 +9,18 @@ var mainContent = Backbone.View.extend({
 	},
     render:function() {
     	self = this;
-    	 $.get('js/templates/mainContentTemplate.html', function (data) {
+    	 $.get('js/templates/salahPanamaTemplate.html', function (data) {
             template = _.template($(data).html(), {});
             self.$el.html(template);
             $('#content').html(template);
             self.trigger('afterRender');
-
+            self.template = template;
         }, 'html');
 
         return this;
     },
     afterRender: function(e){
-        var self = this;
-        var namaz = new namazDaily();
-        namaz.fetch({
+        this.model.fetch({
             success: function (model) {
                 $('#content').find('#fazar').html(model.get('fazar'));
                 $('#content').find('#zohar').html(model.get('zohar'));

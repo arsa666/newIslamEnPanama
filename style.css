@@ -133,7 +133,11 @@
 }
 
 .fs-25{
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.fs-27{
+    font-size: 27px;
 }
 
 .fs-30{
@@ -228,6 +232,10 @@
     height: 250px;
     margin-right: 10px;
     margin-top: 5px;
+}
+
+.bold{
+    font-weight:bold;
 }
 
 

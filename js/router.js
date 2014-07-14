@@ -25,6 +25,9 @@ var MessageRouter = Backbone.Router.extend({
         "islamRadio": "islamRadio",
         "videos": "videos",
         "audios":"audios",
+        "mezquitas": "mezquitas",
+        "salahPanama": "salahPanama",
+
     },
     //MENU inicio init () index
      menu: function () {
@@ -116,6 +119,17 @@ var MessageRouter = Backbone.Router.extend({
         var view = new audios();
         view.render();
         C('audios');
+    },
+    mezquitas: function () {
+        var view = new mezquitas();
+        view.render();
+        C('mezquitas');
+    },
+    salahPanama: function () {
+        var namaz = new namazDaily();
+        var view = new salahPanama({model: namaz});
+        view.render();
+        C('salahPanama');
     },
 
 });
