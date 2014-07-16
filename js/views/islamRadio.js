@@ -4,7 +4,7 @@ var islamRadio = Backbone.View.extend({
 	},
 	checkServerStatus: function(){
         var self = this;
-        var iframeTemplate = '<iframe src="http://107.170.87.104:8000/stream"></iframe>';
+        var iframeTemplate = '<h2>Radio esta en vivo!</h2><iframe src="http://107.170.87.104:8000/stream" height="100px"></iframe>';
         var server = new serverStatus();
         server.fetch({
             success: function (m,response) {

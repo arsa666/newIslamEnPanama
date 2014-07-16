@@ -5,6 +5,7 @@ var MessageRouter = Backbone.Router.extend({
         //App.views = new Array();
         this.menu();
         C('init function');
+
     },
     routes:{
         ""      : "mainContent",
