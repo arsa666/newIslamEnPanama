@@ -1,57 +1,64 @@
 
 <script type="text/template">
 <div class="jumbotron header1 shadow">
-  <div class="container min-h-270">
+  <div class="container min-h-200">
 	<!--<h2 class='fc-white text-shadow-black fs-40'>Assalamu Alaikum Warahmatullahi Wabarakatuh</h2> 
 	<h3 class='fc-white text-shadow-black fs-30'>Que la paz, merced y bendicion de Allah este con usted.</h3> -->
   </div>
 </div>
 
-<div class="container">
+<div class="container main-menu">
   <ul class="nav nav-tabs nav-justified">
     <li class="dropdown fs-25">
-        <a  id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Islam <span class="caret"></span></a>
+        <a  class="dropdown-toggle">Islam <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-          <li><a href="main" onclick="location.href='#/main'"  tabindex="-1" role="tab" data-toggle="tab">Inicio</a></li>
-
-          <li><a href="#" onclick="location.href='#/pilares'"  tabindex="-1" role="tab" data-toggle="tab">5 Pilares del Islam</a></li>
-          <li><a href="#" onclick="location.href='#/mujer'"  tabindex="-1" role="tab" data-toggle="tab">Mujer en el Islam</a></li>
-          <li><a href="noTriste"  tabindex="-1" onclick="location.href='#/noTriste'" role="tab" data-toggle="tab">No Estes Triste</a></li>
-          <li><a href="verdad"  tabindex="-1" onclick="location.href='#/verdad'" role="tab" data-toggle="tab">La Verdad</a></li>
-          <li><a href="ciencia"  tabindex="-1" onclick="location.href='#/ciencia'" role="tab" data-toggle="tab">Ciencia y Sunnah</a></li>
-          <li><a href="ramadan"  tabindex="-1" onclick="location.href='#/ramadan'" role="tab" data-toggle="tab">Ramadán</a></li>
-          <li><a href="quran"  tabindex="-1" onclick="location.href='#/quran'" role="tab" data-toggle="tab">Quran</a></li>
-          <li><a href="salah"  tabindex="-1" onclick="location.href='#/salah'" role="tab" data-toggle="tab">Salaah (Oración)</a></li>
-          <li><a href="qiblah"  tabindex="-1" onclick="location.href='#/qiblah'" role="tab" data-toggle="tab">Qiblah</a></li>
-          <li><a href="duas"  tabindex="-1" onclick="location.href='#/duas'" role="tab" data-toggle="tab">Duas</a></li>
-          <li><a href="hadith"  tabindex="-1" onclick="location.href='#/hadith'" role="tab" data-toggle="tab">Hadith</a></li>
-          <li><a href="bano"  tabindex="-1" onclick="location.href='#/bano'" role="tab" data-toggle="tab">Reglas del baño</a></li>
-
-
+          <li><a href="#/main" class='menu-link'>Inicio</a></li>
+          <li><a href="#/pilares"  class='menu-link'>5 Pilares del Islam</a></li>
+          <li class='p-relative submenu1'>
+            <a>Mujer en el Islam<span class="caret"></span></a>
+            <div class='submenu2'>
+              <div class='b-b-grey'><a class='pl-10'>La Musulmana</a></div>
+              <div class='b-b-grey'><a class='pl-10'>El Hiÿâb</a></div>
+              <div class='b-b-grey'><a class='pl-10'>Honor</a></div>
+              <div class='b-b-grey'><a class='pl-10'>La Madre</a></div>
+              <div class='b-b-grey'><a class='pl-10'>Igualdad</a></div>
+              <div><a class='pl-10'>Esposo</a></div>
+            </div>
+          </li>
+          <li><a href="#/noTriste"   class='menu-link'>No Estes Triste</a></li>
+          <li><a href="#/verdad"   class='menu-link'>La Verdad</a></li>
+          <li><a href="#/ciencia"   class='menu-link'>Ciencia y Sunnah</a></li>
+          <li><a href="#/ramadan"  class='menu-link'>Ramadán</a></li>
+          <li><a href="#/quran"  class='menu-link'>Quran</a></li>
+          <li><a href="#/salah"  class='menu-link'>Salaah (Oración)</a></li>
+          <li><a href="#/qiblah"  class='menu-link'>Qiblah</a></li>
+          <li><a href="#/duas"  class='menu-link'>Duas</a></li>
+          <li><a href="#/hadith"  class='menu-link'>Hadith</a></li>
+          <li><a href="#/bano"  class='menu-link'>Reglas del baño</a></li>
         </ul>
     </li>
     <li class="dropdown fs-25">
-        <a class="dropdown-toggle" data-toggle="dropdown">Multimedia <span class="caret"></span></a>
+        <a class="dropdown-toggle">Multimedia <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-          <li><a href="islamRadio" class="dropdown-childs" tabindex="-1" role="tab" data-toggle="tab" onclick="location.href='#/islamRadio'">Islam Radio Panama</a></li>
-          <li><a href="videos" class="dropdown-childs" tabindex="-1" role="tab" data-toggle="tab" onclick="location.href='#/videos'">Videos</a></li>
-          <li><a href="audios" class="dropdown-childs" tabindex="-1" role="tab" data-toggle="tab" onclick="location.href='#/audios'">Audios</a></li>
+          <li><a href="#/islamRadio" class="menu-link">Islam Radio Panama</a></li>
+          <li><a href="#/videos" class="menu-link">Videos</a></li>
+          <li><a href="#/audios" class="menu-link">Audios</a></li>
         </ul>
     </li>
     <li class="dropdown fs-25">
-        <a  class="dropdown-toggle" data-toggle="dropdown">Panama <span class="caret"></span></a>
+        <a  class="dropdown-toggle">Panama <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-          <li><a href="mezquitas" class="dropdown-childs" tabindex="-1" role="tab" data-toggle="tab" onclick="location.href='#/mezquitas'">Mezquitas</a></li>
-          <li><a href="escuela" class="dropdown-childs" tabindex="-1" role="tab" data-toggle="tab" onclick="location.href='#/escuela'">Escuela Islamica</a></li>
-          <li><a href="salahPanama" class="dropdown-childs" tabindex="-1" role="tab" data-toggle="tab" onclick="location.href='#/salahPanama'">Horarios de Salah en Panama</a></li>
+          <li><a href="#/mezquitas" class="menu-link">Mezquitas</a></li>
+          <li><a href="#/escuela" class="menu-link">Escuela Islamica</a></li>
+          <li><a href="#/salahPanama" class="menu-link">Horarios de Salah en Panama</a></li>
         </ul>
     </li>
     <li class="dropdown fs-25">
-        <a href="#"  class="dropdown-toggle" data-toggle="dropdown">Contactenos <span class="caret"></span></a>
+        <a href="#"  class="dropdown-toggle">Contactenos <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-          <li><a href="#dropdown1" class="dropdown-childs" tabindex="-1" role="tab" data-toggle="tab">Email</a></li>
-          <li><a href="#dropdown2" class="dropdown-childs" tabindex="-1" role="tab" data-toggle="tab">Direccion Panama</a></li>
-          <li><a href="#dropdown2" class="dropdown-childs" tabindex="-1" role="tab" data-toggle="tab">Twitter</a></li>
+          <li><a href="#dropdown1" class="menu-link" tabindex="-1" role="tab" data-toggle="tab">Email</a></li>
+          <li><a href="#dropdown2" class="menu-link" tabindex="-1" role="tab" data-toggle="tab">Direccion Panama</a></li>
+          <li><a href="#dropdown2" class="menu-link" tabindex="-1" role="tab" data-toggle="tab">Twitter</a></li>
         </ul>
     </li>
   </ul>
