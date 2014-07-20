@@ -6,6 +6,12 @@ $argv1 = $argv[1];
 $fileName = "js/views/$argv1".".js";
 
 $templateName = "js/templates/$argv1"."Template.html";
+
+if (file_exists($fileName)) {
+    echo "The file $fileName exists\n";
+    exit(0);
+} 
+
 $file=fopen($fileName,"w") or exit("Unable to create view file!");
 
 fwrite($file,"var $argv1 = Backbone.View.extend({

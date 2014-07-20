@@ -5,8 +5,15 @@ var menuView = Backbone.View.extend({
     className: 'menu-view',
     submenu: function (e) {
         stop(e);
-        var submenu2 = $(e.currentTarget).find('.submenu2');
+        var target = $(e.target);
+        var submenu2;
+        if (target.hasClass('caret')) {
+            submenu2 = target.parent().next();
+        } else {
+            submenu2 = target.next();
+        }
         if (submenu2.css('display') === 'none') {
+            $('.submenu2').css('display', 'none');//close all submenus frist
             submenu2.css('display', 'block');
         } else if (submenu2.css('display') === 'block'){
             submenu2.css('display', 'none');
@@ -31,7 +38,7 @@ var menuView = Backbone.View.extend({
             $('#menu').find('.dropdown-toggle').parent().removeClass('open');
             $('#menu').find('.submenu2').css('display', 'none');//close sublevel2
             this.selectLink(target.attr('href'));
-        } else if (target.parent().hasClass('submenu1')) {//open the submenu1
+        } else if (target.parent().hasClass('submenu1') || target.hasClass('caret')) {//open the submenu1
             this.submenu(e);
         } else {//close everything
             $('#menu').find('.dropdown').removeClass('open');
